@@ -1,0 +1,157 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+.fix { overflow: hidden }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-family: 'Yeseva One', cursive;
+}
+html,
+body { height: 100% }
+body {font-family: 'Gentium Book Basic', serif;}
+a {
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: #333;
+}
+a:hover { text-decoration: none }
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+/*My Style*/
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    animation: day2night 15s linear infinite;
+    
+}
+
+.circle {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 520px;
+    height: 520px;
+    animation: animate 25s linear infinite;
+}
+
+
+.man {
+	width: 50%;
+    height: 2px;
+    background: transparent;
+    position: absolute;
+    top: calc(50% - 1px);
+    transform-origin: right;
+    animation: animateMan 10s linear infinite;
+}
+
+
+.man img{
+    transform: rotate(60deg) translateY(40px)
+}
+
+
+
+@keyframes animate
+{
+    0%
+    {
+        transform:translate(-50%, -50%) rotate(0deg) scale(.8);
+    }
+    100%
+    {
+        transform:translate(-50%, -50%) rotate(-360deg) scale(.8);
+    }
+}
+
+
+@keyframes animateMan
+{
+      0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }  
+}
+
+
+
+@keyframes day2night
+{
+    0%
+    {
+        background: #fff;
+    }
+    10%
+    {
+        background: #fff;
+    }
+    50%
+    {
+        background: #111;
+    }
+    90%
+    {
+        background: #fff;
+    }
+    100%
+    {
+        background: #fff;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
